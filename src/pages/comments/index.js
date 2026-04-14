@@ -13,7 +13,6 @@ const CommentsPage = ({ comments }) => {
               <strong>User:</strong> {comment.user.username} 
             </p>
           </li>
-          <hr/>
           </>
         ))}
         

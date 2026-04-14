@@ -65,7 +65,7 @@ export default function NabBarComponent() {
                 className="nav-link fw-medium"
                 style={{ color: "#555" }}
               >
-                {/* <i className="fas fa-circle-info me-1"></i>  */}| posts
+                {/* <i className="fas fa-circle-info me-1"></i>  */}| posts ISR
               </Link>
             </li>
             <li className="nav-item">
@@ -74,7 +74,16 @@ export default function NabBarComponent() {
                 className="nav-link fw-medium"
                 style={{ color: "#555" }}
               >
-                {/* <i className="fas fa-circle-info me-1"></i>  */}| comments
+                {/* <i className="fas fa-circle-info me-1"></i>  */}| comments SSR
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                href="/users"
+                className="nav-link fw-medium"
+                style={{ color: "#555" }}
+              >
+                {/* <i className="fas fa-circle-info me-1"></i>  */}| users CSR
               </Link>
             </li>
           </ul>

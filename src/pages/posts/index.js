@@ -10,7 +10,7 @@ const PostsPage = ({ posts }) => {
         {posts.map((post) => (
           <li key={post.id} style={{ marginBottom: '15px' }}>
             <Link href={`/posts/${post.id}`}>
-              {post.title}  {/* نضع النص مباشرة داخل Link */}
+              {post.title}  
             </Link>
             <p>{post.body.substring(0, 100)}...</p>
           </li>

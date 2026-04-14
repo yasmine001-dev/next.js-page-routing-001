@@ -1,10 +1,10 @@
-import ProductsComponent from "@/components/Products";
+import ProductsComponent from "../../components/Products";
 import React from "react";
 
 const Index = ({ products }) => {
   return (
     <div>
-      <ProductsComponent {...products} />
+      <ProductsComponent products={products} />
     </div>
   );
 };
@@ -17,7 +17,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      products: data,
+      products: data.products, 
     },
   };
 }
